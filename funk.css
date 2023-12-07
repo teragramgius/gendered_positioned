@@ -322,6 +322,7 @@ font-family: 'Kavoon', serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: auto;
 }
 
 .product-nav > * {
