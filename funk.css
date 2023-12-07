@@ -1,168 +1,3 @@
-
-@font-face {
-  font-family: 'mairy_black_oblicuaregular';
-  src: url('/fontkit/mairy_black_oblicua-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_black_oblicua-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_blackregular';
-  src: url('/fontkit/mairy_black-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_black-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_bold_oblicuaregular';
-  src: url('/fontkit/mairy_bold_oblicua-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_bold_oblicua-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_boldregular';
-  src: url('/fontkit/mairy_bold-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_book_oblicuaregular';
-  src: url('/fontkit/mairy_book_oblicua-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_book_oblicua-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_bookregular';
-  src: url('/fontkit/mairy_book-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_book-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_extrabold_oblicuaRg';
-  src: url('/fontkit/mairy_extrabold_oblicua-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_extrabold_oblicua-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_extraboldregular';
-  src: url('/fontkit/mairy_extrabold-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_extrabold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_extralight_oblicuaRg';
-  src: url('/fontkit/mairy_extralight_oblicua-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_extralight_oblicua-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_extralightregular';
-  src: url('/fontkit/mairy_extralight-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_extralight-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_hairline_oblicuaregular';
-  src: url('/fontkit/mairy_hairline_oblicua-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_hairline_oblicua-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'mairy_hairlineregular';
-  src: url('/fontkit/mairy_hairline-webfont.woff2') format('woff2'),
-       url('/fontkit/mairy_hairline-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-@font-face {
-  font-family: 'funk_gibson_demoregular';
-  src: url('funk_gibson_demo-webfont.woff2') format('woff2'),
-       url('funk_gibson_demo-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'funk_gibson_demooutline';
-  src: url('/fontkit/funk_gibson_outline_demo-webfont.woff2') format('woff2'),
-       url('/fontkit/funk_gibson_outline_demo-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -181,7 +16,7 @@
   background: #e7b77a;
   padding: 2em;
   line-height: 110%;
-  font-family: 'mairy_black_oblicuaregular';
+  font-family: 'Shrikhand', serif;
   z-index: 1;
 }
 
@@ -291,8 +126,7 @@ border-radius: 12 px;
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  font-family: 'funk_gibson_demooutline';
-
+  font-family: 'Shrikhand', serif;
 }
 
 .nav-link {
@@ -305,8 +139,7 @@ border-radius: 12 px;
   position: relative;
   top: 120px;
   text-decoration: none;
-  font-family: 'funk_gibson_demooutline';
-  font-size: 80px;
+    font-family: 'Shrikhand', serif;  font-size: 80px;
   font-weight: "Condensed Light";
   font-weight: 300;
   color: #039ad7;
@@ -318,8 +151,7 @@ border-radius: 12 px;
   position: relative;
   top: -20px;
   left: -10px;
-  font-family: 'funk_gibson_demooutline';
-  font-size: 20px;
+    font-family: 'Shrikhand', serif;  font-size: 20px;
   color: #039ad7;
   opacity: 0.5;
 }
@@ -336,8 +168,7 @@ border-radius: 12 px;
 }
 
 .product-header {
-  font-family: 'funk_gibson_demooutline';
-}
+    font-family: 'Shrikhand', serif;}
 
 .nav-wrapper:nth-child(2) {
   margin-right: 10em;
@@ -347,7 +178,7 @@ border-radius: 12 px;
   position: relative;
   top: 20px;
   text-decoration: none;
-  font-family: 'mairy_black_oblicuaregular';
+    font-family: 'Shrikhand', serif;
   font-size: 2px;
   color: #039ad7;
   text-transform: uppercase;
@@ -408,8 +239,7 @@ border-radius: 12 px;
 
 .product-hero h3 {
   color: orangered;
-  font-family: 'mairy_black_oblicuaregular';
-}
+    font-family: 'Shrikhand', serif;
 
 .product {
   display: flex;
@@ -549,8 +379,7 @@ border-radius: 12 px;
   color: whitesmoke;
   background: #e7b77a;
   cursor: pointer;
-  font-family: 'funk_gibson_demooutline';
-
+    font-family: 'Shrikhand', serif;
 }
 
 /* product-description */
