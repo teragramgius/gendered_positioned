@@ -5,8 +5,6 @@
   border-radius: 27px;
 }
 
-
-
 .container {
   position: absolute;
   border-radius: 12px;
@@ -19,7 +17,6 @@
   font-family: 'Kavoon', serif;
   z-index: 1;
 }
-
 
 .highlight
 {   
@@ -47,7 +44,6 @@ border-radius: 12 px;
   margin-bottom: 1.5em; /* Add space between paragraphs */
 }
 
-
 .nav-toggle {
   position: fixed;
   top: 0;
@@ -55,7 +51,6 @@ border-radius: 12 px;
   width: 10px;
   height: 10px;
 }
-
 
 #toggleOC {
   background-color: #000;
@@ -72,20 +67,10 @@ border-radius: 12 px;
 }
 
 #togglePlaces {
-  width: 20px;
-  height: 20px;
-  background: yellowgreen;
-  border: 1px solid #039ad7;
-  border-radius: 100%;
   cursor: pointer;
 }
 
 #toggleDates {
-  width: 20px;
-  height: 20px;
-  background: blue;
-  border: 1px solid #039ad7;
-  border-radius: 100%;
   cursor: pointer;
 }
 

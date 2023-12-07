@@ -19,6 +19,19 @@
 .highlight
 {   
 background-color: yellow; 
+display: inline-block; /* Change the display to inline-block */
+}
+
+.highlight2
+{   
+background-color: blue; 
+display: inline-block; /* Change the display to inline-block */
+}
+
+.highlight3
+{   
+background-color: orangered; 
+display: inline-block; /* Change the display to inline-block */
 }
 
 .scrollable-content {
@@ -28,7 +41,7 @@ background-color: yellow;
 }
 
 .scrollable-content h2 {
-  font-family: "Neue World"; /* Use Roboto or fallback to a generic sans-serif font */
+  font-family: "Open Sans"; /* Use Roboto or fallback to a generic sans-serif font */
   font-size: 40px;
   font-weight: lighter;
   color: #141414;
@@ -65,20 +78,11 @@ background-color: yellow;
 }
 
 #togglePlaces {
-  width: 20px;
-  height: 20px;
-  background: yellowgreen;
-  border: 1px solid #a5b9aa;
-  border-radius: 100%;
   cursor: pointer;
+
 }
 
 #toggleDates {
-  width: 20px;
-  height: 20px;
-  background: blue;
-  border: 1px solid #a5b9aa;
-  border-radius: 100%;
   cursor: pointer;
 }
 
@@ -129,7 +133,7 @@ background-color: yellow;
   position: relative;
   top: 120px;
   text-decoration: none;
-  font-family: "Neue World";
+  font-family: "Open Sans";
   font-size: 100px;
   font-weight: "Condensed Light";
   font-weight: 300;
@@ -142,7 +146,7 @@ background-color: yellow;
   position: relative;
   top: -20px;
   left: -10px;
-  font-family: "Neue World";
+  font-family: "Open Sans";
   font-size: 20px;
   color: #a5b9aa;
   opacity: 0.5;
@@ -167,7 +171,7 @@ background-color: yellow;
   position: relative;
   top: 20px;
   text-decoration: none;
-  font-family: "Neue World";
+  font-family: "Open Sans";
   font-size: 2px;
   color: #a5b9aa;
   text-transform: uppercase;
