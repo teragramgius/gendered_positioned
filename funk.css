@@ -16,7 +16,7 @@
   background: #e7b77a;
   padding: 2em;
   line-height: 110%;
-  font-family: 'Shrikhand', serif;
+  font-family: 'Kavoon', serif;
   z-index: 1;
 }
 
@@ -126,8 +126,7 @@ border-radius: 12 px;
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  font-family: 'Shrikhand', serif;
-}
+font-family: 'Kavoon', serif;
 
 .nav-link {
   position: relative;
@@ -178,7 +177,7 @@ border-radius: 12 px;
   position: relative;
   top: 20px;
   text-decoration: none;
-    font-family: 'Shrikhand', serif;
+  font-family: 'Kavoon', serif;
   font-size: 2px;
   color: #039ad7;
   text-transform: uppercase;
@@ -239,9 +238,8 @@ border-radius: 12 px;
 
 .product-hero h3 {
   color: orangered;
-    font-family: 'Shrikhand', serif;
-
-.product {
+  font-family: 'Kavoon', serif;
+  product {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -379,8 +377,7 @@ border-radius: 12 px;
   color: whitesmoke;
   background: #e7b77a;
   cursor: pointer;
-    font-family: 'Shrikhand', serif;
-}
+  font-family: 'Kavoon', serif;
 
 /* product-description */
 
