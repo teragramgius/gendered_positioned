@@ -54,6 +54,18 @@ display: inline-block; /* Change the display to inline-block */
   margin-bottom: 1.5em; /* Add space between paragraphs */
 }
 
+@media screen and (max-width: 768px) {
+  .big-image {
+    max-width: 80%; /* Adjust the maximum width for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .big-image {
+    max-width: 100%; /* Allow the image to take up the full width for very small screens */
+  }
+}
 
 .nav-toggle {
   position: fixed;
@@ -79,7 +91,6 @@ display: inline-block; /* Change the display to inline-block */
 
 #togglePlaces {
   cursor: pointer;
-
 }
 
 #toggleDates {
