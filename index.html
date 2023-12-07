@@ -2,106 +2,234 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Materialism</title>
-    <!-- main style -->
-    <link rel="stylesheet" href="styles.css" />
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-
-    <!-- leaflet-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <!-- icons-->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>feMMMMag</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js">
+    </script>
   </head>
+
   <body>
-    <div class="nav">      
-      <p><b>New Materialism</b></p>
-      <form class="color-picker" action="">
-        <fieldset>
-          <legend class="visually-hidden">Pick a color scheme</legend>
-          <label for="pink" class="visually-hidden">Pink theme</label>
-          <input type="radio" id="pink" name="theme">
-          <label for="blue" class="visually-hidden">Blue theme</label>
-          <input type="radio" id="blue" name="theme">
-      
-      
-      <p>A MMMM experiment</p>
-    </div> 
-    <div class="footer">
-      <p>2023 © Giusy Grieco</p>
-    </div>
-    <div class="overlay">
-      <div>
-        <iframe src="https://uploads.knightlab.com/storymapjs/5af1b1386eba70de9dc2f7efa863b93a/london/draft.html" frameborder="0" width="100%" height="800"></iframe>
+    <div class="container">
+      <div id="toggleOC"></div>
+      <div class="product-variants">
+      <a class="article-toggle" data-article="1">&#128240;IlSole</a>
+      <a class="article-toggle" data-article="2">&#128240;WIRED</a>
+      <a class="article-toggle" data-article="3">&#128240;Vanity Fair</a>
+      <a class="article-toggle" href="/documentation.html"><b>🌋Documentation</b></a> <br> <br> 
+      <a class="article-toggle" id="toggleTHEME1" onclick="changeTheme('style.css')">Brutalist</a>
+      <a class="article-toggle" id="toggleTHEME2" onclick="changeTheme('funk.css')">Funk</a>
       </div>
-      <!-- overlay header -->
-      <div class="overlay-header">
-        <div class="col">
-          <h1 id="item-name">Interview with Karen Barad</h1>
+      <div class="scrollable-content">
+        <div class="product-info">
+          <iframe src="https://uploads.knightlab.com/storymapjs/5af1b1386eba70de9dc2f7efa863b93a/feminicides-in-italy/index.html" frameborder="0" width="100%" height="500"></iframe>        </div>
+
+<div class="article" id="article1">
+          <div class="product-hero">
+            <div class="product-header">
+              <h3><p><b>Femminicidi in Italia: le storie di tante vite spezzate</b> <br> // By IlSole24Ore<br> 29 Jul 2023</p></h3>
+            </div>
+            <p>L'ultima vittima in ordine temporale è una ragazza giovanissima, <a id="people">Sofia Castelli</a>, di soli 20 anni. A ucciderla nelle prime ore del mattino di sabato 29 luglio il fidanzato, il 23enne Zakaria Atqaoui, che l'avrebbe colpita con più fendenti alla gola, per poi confessare il delitto ai carabinieri.</p>
+            <p>Il giorno prima è stata uccisa per mano del marito a Pozzuoli è stata Angela Gioiello, finita a colpi d'arma da fuoco dopo una lite mentre in casa c'erano i 3 figli della coppia. Lo stesso giorno Mara Fait, 63 anni, infermiera in pensione di Noriglio in Trentino, è stata uccisa dal vicino a colpi d'ascia. Aveva chiesto invano l'applicazione del 'codice rosso' per via delle molestie e delle minacce dell'uomo.</p>
+            <p>Intanto si è costituita la commissione parlamentare d'inchiesta sui femminicidi, nonché su ogni forma di violenza di genere che per la prima volta è bicamerale.Secondo i dati del Dipartimento di Pubblica sicurezza, dall'1 gennaio al 25 giugno di quest'anno, in Italia si sono registrati 157 omicidi, con 57 vittime donne, di cui 47 uccise in ambito familiare/affettivo.</p>
+            <p>Di queste, 27 hanno trovato la morte per mano del partner/ex partner. Donne uccise per mano di chi diceva di amarle. Ecco le loro storie. Storie di tante vite spezzate.</p>
+            <p><b>Giulia Donato, 4 gennaio, Genova </b>A Pontedecimo, muore Giulia Donato, 23 anni, uccisa dall'ex compagno. Il suo corpo viene ritrovato dalle forze dell'ordine dopo l'allarme lanciato dalla sorella. Secondo le ricostruzioni, il trentaduenne, una guardia giurata, era arrivato a casa dell'ex fidanzata armato della propria pistola d'ordinanza. Prima le ha sparato, poi si è suicidato con la stessa arma da fuoco.</p>
+            <p><b>Martina Scialdone, 13 gennaio, Roma </b>Martina Scialdone, 34 anni, viene ammazzata a Roma, in zona Furio Camillo tra i quartieri Tuscolano e Appio Latino. La vittima è stata raggiunta da un colpo di pistola sparato dall'ex compagno Costantino Bonaiuti, 61 anni.</p>
+            <p><b>Oriana Brunelli, 14 gennaio, Bellaria Igea Marina (Rimini) </b>Oriana Brunelli, 70 anni, muore uccisa dall'ex amante Vittorio Cappuccini, 80 anni. Secondo quanto ricostruito, i due avevano una relazione extraconiugale. Lui, ex vigile, l'ha uccisa con tre colpi di pistola e dopo si è tolto la vita.</p>
+            <p><b>Teresa Di Tondo, 15 gennaio, Trani </b>Teresa Di Tondo, 44 anni muore ammazzata dal marito con diversi colpi di arma da taglio. Il marito, 52 anni, dopo averla uccisa, è uscito in giardino e si è impiccato.</p>
+            <p><b>Yana Malayko, 1 febbraio, Castiglione delle Stiviere (Mantova) </b>Yana Malayko, 23 anni, era scomparsa nella notte tra il 19 e il 20 gennaio. Il suo corpo viene ritrovato a Lonato del Garda, in provincia di Brescia, in aperta campagna. La 23enne è stata ammazzata da Dumitru Stratan, un 33enne con il quale aveva avuto una relazione, terminata a dicembre 2022.</p>
+            <p><b>Antonia Vacchelli, 6 febbraio, Lecco </b>Antonia Vacchelli, 86 anni, viene ammazzata dal marito Umberto Antonello, ex ferroviere, che l'ha strangolata a mani nude. L'uomo ha confessato di averla ammazzata perché non sopportava l'idea 'di vederla soffrire'. Ai giudici ha spiegato che averla ammazzata, per lui, era un 'gesto d'amore'.</p>
+            <p><b>Melina Marino e Santa Castorina, 11 febbraio, Riposto (Catania) </b>Melina Marino, 48 anni, e Santa Castorina, 50 anni, vengono trovate senza vita a Riposto, in provincia di Catania. Qualche ora più tardi Salvatore La Motta, 63 anni, ergastolano in regime di semilibertà e in permesso premio, si presenta armato davanti alla caserma dei carabinieri e si suicida. Secondo quanto ricostruito, Melina Marino aveva una relazione con La Motta e aveva deciso di lasciarlo: la confessione resa alla sua amica avrebbe spinto il 63enne ad ammazzare anche Castorina.</p>
+            <p><b>Sigrid Gröber, 19 febbraio, Merano (Bolzano) </b>Sigrid Gröber, 39 anni, originaria di Brunico, muore nella notte tra il 18 e il 19 febbraio all'ospedale di Merano in provincia di Bolzano, dove poco prima era stata ricoverata in gravissime condizioni. Ad ammazzarla il compagno Alexander Gruber, 55 anni. Secondo l'autopsia, la donna è morta in seguito alle lesioni riportate per i calci e i pugni ricevuti dal compagno.</p>
+            <p><b>Giuseppina Traini, 25 febbraio, Capodarco, frazione di Fermo </b>Giuseppina Traini, 85 anni, è stata uccisa a coltellate dal marito Giovanni Petrini, 87 anni. L'uomo è stato arrestato con l'accusa di omicidio.</p>
+            <p><b>Costantina dell'Albani, 4 marzo, Giarratana (Ragusa) </b>Costantina dell'Albani, 52 anni, è stata uccisa di notte nella casa di famiglia dove stava accudendo l'anziana madre. La vittima è stata colpita con diverse coltellate dal cognato Mariano Barresi, 66 anni, arrestato dai carabinieri.</p>
+            <p><b>Iulia Astafieya, 7 marzo, Rosarno (Reggio Calabria) </b>Iulia Astafieya, di 35 anni, di nazionalità ucraina, è stata uccisa dal compagno, Denis Molchanov, suo connazionale, a Rosarno, in provincia di Reggio Calabria. L'uomo è stato fermato nella notte dalla polizia reggina, dopo alcune ore di ricerche. Ad avvisare gli inquirenti, secondo quanto riferito a LaPresse da fonti investigative, il proprietario della casa nella quale la vittima risiedeva con il compagno.</p>
+            <p><b>Maria Febronia Buttò, 10marzo, Gioiosa Marea (Messina) </b>Maria Febronia Buttò, 61 anni, è stata uccisa a coltellate dal marito Tindaro Molica Nardo, 65 anni, che, dopo averla ammazzata, ha utilizzato la stessa arma per suicidarsi.</p>
+            <p><b>Francesca Giornelli, 28 marzo, Tuoro sul Trasimeno (Perugia) </b>Francesca Giornelli muore strangolata dal compagno Lamberto Roscini che dopo si è impiccato. Il femminicidio, avvenuto nella casa dove i due abitavano a Tuoro sul Trasimeno, in provincia di Perugia, è stato confessato dall'uomo in alcuni biglietti scritti prima di suicidarsi.</p>
+            <p><b>Zenepe Uruci, 30 marzo, Terni </b>Zenepe Uruci, 56 anni, viene ammazzata dal marito Xhafer Uruci, 62 anni nella propria abitazione. La coppia, originaria dell'Albania, da tempo viveva nel quartiere Borgo Rivo. La donna, vittima da anni di maltrattamenti da parte del marito, è stata uccisa a coltellate. L'uomo, arrestato dalla polizia con l'accusa di omicidio volontario, è morto suicida nella cella del carcere dove era rinchiuso.</p>
+            <p><b>Sara Ruschi e Brunetta Ridolfi, 13 aprile, Arezzo </b>Sara Ruschi, 35 anni, e la mamma, Brunetta Ridolfi, 76 anni, vengono uccise dal compagno della giovane, Jawad Hicham, di 38 anni, nella loro abitazione di Arezzo. L'uomo ha aggredito le due donne con un coltello da cucina: la suocera è deceduta sul colpo, mentre la compagna è morta in ospedale. Il duplice omicidio è avvenuto davanti ai due figli della coppia, uno di 16 anni che poi ha chiamato la polizia, e la più piccola di soli 2 anni.</p>
+            <p><b>Danjela Neza, 6 maggio, Savona </b>Safayou Sow, 27 anni cittadino della Guinea, si è presentato con una pistola semiautomatica e ha ucciso la ex compagna, Danjela Neza, 29enne di origini albanesi dopo la fine della loro relazione. L'uomo si è poi costituito.</p>
+            <p><b>Giulia Tramontano, 27 maggio, Senago (Milano) </b>Giulia Tramontano era incinta di 7 mesi quando è stata ammazzata dal suo compagno, Alessandro Impagnatiello, 30 anni che poi confessa l'omicidio. Era stato lui a denunciare la scomparsa della ragazza, 29enne nata a Sant'Antimo, in provincia di Napoli, il 28 maggio precedente. Il suo corpo senza vita è stato ritrovato 3 giorni dopo. Giulia Tramontano è stata uccisa a coltellate: tra il 37 e i 40 colpi quelli che le ha inferto il compagno. Impagnatiello portava avanti una relazione parallela con una collega, ma era stato scoperto da entrambe.</p>
+            <p><b>Pierpaola Romano , 1 giugno, Roma </b>Pierpaola Romano ha 58 anni ed è una poliziotta. Un suo collega, Massimiliano Carpineti, la uccide con la pistola d'ordinanza. Il corpo dell'assassino viene ritrovato nella sua auto qualche ora più tardi: si è tolto la vita utilizzando la stessa arma. I due erano amanti, Pierpaola Romano aveva deciso di mettere un punto alla loro storia quando aveva scoperto di essere malata di cancro. Carpineti non ha accettato la fine della loro relazione e l'ha uccisa.</p>
+            <p><b>Floriana Floris, 9 giugno, Incisa Scapaccino (Asti) </b>Floriana Floris, 49 anni, viene ritrovata senza vita nella sua abitazione. Sua figlia, nata da un precedente matrimonio, non riusciva a sentirla da qualche giorno e ha lanciato l'allarme. Ad ammazzarla con 30 coltellate l'attuale compagno della donna, Paolo Riccone, 50 anni, che ha tentato invano il suicidio. Sotto interrogatorio da parte dei carabinieri e della magistratura, l'uomo ha confessato.</p>
+            <p><b>Svetlana Ghenciu,19 giugno, Rimini </b>Svetlana Ghenciu, 47 anni, e Gioacchino Leonardi, 50 anni, sono stati trovati morti nel corso del tardo pomeriggio del 19 giugno 2023 all'interno dell'abitazione in cui risiedevano a Borgo Marina di Rimini. A ritrovare i corpi dei due, il figlio 16enne della coppia, rientrato a casa dopo un paio di giorni. L'uomo ha ucciso la moglie e poi si è suicidato.</p>
+            <p><b>Michelle Maria Causo , 28 giugno, Roma </b>Michelle Maria Causo ha solo 17 anni. Il suo corpo viene abbandonato accanto a un cassonetto dell'immondizia, nel quartiere Primavalle, a Roma. Per la sua morte c'è un fermato, un 17enne, sentito in questura per molte ore prima del provvedimento cautelare.</p>
+            <p><b>Mariella Marino, 20 luglio, Enna </b>Tre colpi di pistola davanti a un supermercato di Troina (Enna): Mariella Marino, 50 anni, è stata uccisa così. Ad essere arrestati il suo ex marito Maurizio Impellizzeri, allevatore di Troina (Enna) di 59 anni. Il movente potrebbe essere collegato al fatto che la donna aveva interrotto la relazione con il marito da ormai un anno. L'uomo aveva già patteggiato una condanna a 8 mesi per atti persecutori nei confronti della moglie</p>
+            <p><b>Mara Fait, 28 luglio, Noriglio (Trento) </b>Uccisa con l'accetta che usava per tagliare la legna di casa: due colpi netti, buttando l'arma del delitto lungo la strada verso la caserma dei carabinieri di Rovereto, in Trentino, dove si è costituito. Così è morta Mara Fait, 63 anni, infermiera in pensione di Noriglio. A confessare il vicino di casa, 48 anni di origini albanesi. «Ho ammazzato la mia vicina di casa», avrebbe detto l'uomo suonando alla caserma dei carabinieri. Ultimo atto di mesi di dissapori di vicinato. La donna aveva chiesto invano l'attivazione del 'codice rosso'.</p>
+            <p><b>Angela Gioiello, 28 luglio, Pozzuoli (Napoli) </b>Antonio Di Razza ha prima ucciso la moglie Angela Gioiello, poi, con la stessa arma, si è suicidato. È successo a Pozzuoli, in provincia di Napoli. In casa, al momento dell'omicidio-suicidio anche i tre figli della coppia di 16, 13 e 8 anni. Ed è stato uno dei tre a chiamare i carabinieri. I tre figli della coppia, però, non avrebbero assistito a quanto accaduto perché i loro genitori erano in camera da letto. Secondo le prime ipotesi, tra i due, marito e moglie, è scoppiata una lite, finita in tragedia.</p>
+            <p><b>Sofia Castelli, 29 luglio, Cologno Monzese (Milano)</b>Sofia Castelli, 20 anni, è stata uccisa dal fidanzato, il 23enne Zakaria Atqaoui a Cologno Monzese, alle porte di Milano, con più fendenti alla gola. I due erano tornati da una serata in discoteca: l'ultima foto della giovane alle 5.58, quella del palazzo dove viveva e dove è stata uccisa.</p>
+          </div>  
         </div>
-        <!-- close button -->
-        <div>
-          <p id="close-btn">Close</p>
-          <a id="item-link" href="https://quod.lib.umich.edu/o/ohp/11515701.0001.001"
-            ><i class="ph-bold ph-arrow-up-right"></i> View Source</a
-          >
+        <div class="article" id="article2">
+          <div class="product-hero">
+            <div class="product-header">
+              <h3><p><b>I numeri della violenza contro le donne</b> <br>// By Riccardo Saporiti on WIRED <br>21 Nov 2023</p></h3>
+            </div>
+            <p>L'ultimo femminicidio in ordine di tempo è quello di Giulia Cecchettin, per il quale è stato arrestato l'ex fidanzato della studentessa universitaria, Filippo Turetta, ma sono nel complesso oltre 100 gli omicidi le cui vittime sono donne registrati dall'inizio dell'anno in Italia. Ma non c'è solo questo: in Italia crescono le violenze, i maltrattamenti e gli atti persecutori contro le donne. Senza dimenticare i matrimoni combinati. Wired ha utilizzato i numeri del ministero dell'Interno per tracciare l'identikit del paese che odia le donne.</p>  
+            <h3>I femminicidi</h3>
+            <p>Non esiste una statistica precisa dei femminicidi: per sapere quanti siano occorre andare per esclusione. Nel senso che il Viminale riporta il totale degli omicidi, indicando quante vittime siano donne. Ma questi non sono necessariamente femminicidi, perché un omicidio per essere definito femminicidio deve presentare due elementi: il contesto relazionale tra l’esecutore e la vittima e le motivazioni che muovono l’omicida (come la gelosia, il dominio, il possesso). Vale allora la pena di prendere in considerazione quelli maturati in ambiente familiare o affettivo. O, in un'interpretazione più restrittiva, quelli in cui l'autore è il partner o un ex partner.</p>
+            <p>Sono 285 gli omicidi registrati tra il 1 gennaio e il 12 novembre 2023. Le vittime di genere femminile sono 102, pari al 35,8%. Una su tre, per semplificare. Se si guarda a quelli maturati in un contesto familiare o affettivo, abbiamo un totale di 125 morti, dei quali 82 donne. La percentuale sale al 65,6%. Due su tre, per proseguire nella semplificazione. Se infine si considerano gli episodi in cui l'assassino è il partner o l'ex partner, abbiamo 58 vittime di omicidio, 53 delle quali donne: si sale al 91,4%. Scegliendo come definizione di femminicidio quella meno restrittiva, ovvero di un omicidio maturato nell'ambito di un contesto familiare o affettivo, nel grafico sottostante emerge lo storico degli ultimi anni.</p>
+            <p>Sono state 101 le donne uccise in ambito familiare o affettivo nel 2020, 105 l'anno successivo, 104 nel 2022. Tra il 1 gennaio e il 12 novembre dello scorso anno, i femminicidi sono stati 88, nello stesso periodo di quest'anno 82.</p>
+            <h3>Le violenze sessuali</h3>
+            <p>Il ministero dell'Interno censisce quelli che vengono definiti come reati spia della violenza di genere. Ovvero quei crimini che sono indice di una situazione che può degenerare in qualcosa di più grave. Si tratta, nello specifico, degli atti persecutori e dei maltrattamenti nei confronti di familiari o conviventi.</p>
+            <p>I maltrattamenti sono più che raddoppiati dal 2013, passando da 9.713 di dieci anni fa ai 19.902 denunciati nel corso del 2022. E proprio su quest'ultimo verbo va posto l'accento: denunciare. Il ministero non può che censire i reati denunciati. Questo indicatore di un aumento può, pertanto, essere legato non solo a un aumento dei reati compiuti, che non è necessariamente correlato, ma anche al numero di donne che decidono di denunciare. In ogni caso, il 91% delle persone che lo scorso anno ha sporto denuncia per il reato punito dall'articolo 572 del codice penale era di genere femminile.</p>
+            <p>La percentuale di donne vittime di atti persecutori nel 2022 si è attestata al 74% del totale delle denunce. Anche in questo caso il numero è cresciuto: erano state 9.689 nel 2013, sono salite a 13.817 lo scorso anno. Fatte le medesime premesse per cui il numero di reati denunciati non corrisponde necessariamente al numero di quelli commessi, anche le violenze sessuali sono in aumento.</p>
+            <p>Erano state 4.084 quelle riportate alle forze di polizia nel 2013, lo scorso anno sono salite a 5.725. Si tratta di un incremento del 40,2% in dieci anni. Nello stesso report vengono censite anche le violenze sessuali di gruppo. Nel grafico sottostante lo storico. Sono stati 129 gli episodi registrati nel corso del 2022, il secondo valore più alto dopo i 136 censiti nel corso del 2023.</p>
+            <h3>I matrimoni combinati</h3>           
+            <p>La legge contro i matrimoni combinati, entrata in vigore nell'agosto del 2019, parla in realtà di costrizione o induzione al matrimonio, reato punito con una pena da uno a cinque anni di reclusione. Un reato che può sfociare in un femminicidio, come dimostra il caso di Hina Saleem, uccisa dai parenti perché si era fidanzata con un ragazzo italiano, rifiutando l'idea della famiglia di un matrimonio combinato con un connazionale pakistano. O quello di Sana Cheema, per il cui femminicidio, dettato dal rifiuto alle nozze imposte dalla famiglia, sono a processo il padre e il fratello.</p>
+            <p>Nel 2021 sono state 24 le persone denunciate per questo reato, lo scorso anno 13. Anche se il dato, specifica il ministero dell'Interno nel report dedicato al tema, non è consolidato. Potrebbe, in altre parole, variare. L'86% delle vittime è donna, il 50% ha tra i 18 ed i 24 anni, il 59% non ha la cittadinanza italiana.</p>
+          </div>  
         </div>
-      </div>
-      <!-- content-->
-      <div class="item-details"> 
-          <div>
-              <div>
-                  <p><b>In Meeting the Universe Halfway and in several journal articles, you follow Haraway in proposing “diffraction,” the relational nature of difference, as a methodology for treating theories and texts not as preexisting entities, but as intra-action, as forces from which other texts come into existence. On the other hand, you focus strongly on the work of <a
-                    id="people">Niels Bohr</a> throughout your work. Your re-writing of the philosophy that is active in all of his texts seems to be neither dutiful nor undutiful to his ideas. And yet your work can be read as one of the strongest commentaries on the work of <a
-                    id="people">Bohr</a> now available to academics. Perhaps the first one that succeeds in reading him into the Humanities. Next to <a
-                    id="people">Bohr</a>, of course, you read many other scientists and scholars like <a id="people">Einstein</a>, <a id="people">Schrödinger</a>, but also <a id="people">Merleau-Ponty</a>, <a id="people">Haraway</a> of course, <a id="people">Deleuze</a>, and <a id="people">Latour</a>. Especially as concerns the philosophers and those scholars traditionally not read within the Sciences, you seem to read them very affirmatively, albeit in passing. Feminists are usually wary of thought as governed by oedipality; feminists such as <a
-                    id="people">Rosi Braidotti</a> have argued for a methodology that does not repeat the all-too-common Oedipal relation with Masters, affirming their status by negating the work, and this comes very close to your critique of critique actually. Does diffraction allow for a relation between texts and scholars that is neither undutiful (affirming the Master by negating the work) nor dutiful (placing the “new” work in the Master’s house)? </b> <br><br> First, I want to say that I try to stay away from using the term <a
-                    id="concept">“agent,”</a> or even “actant,” because these terms work against the relational ontology I am proposing. Also the notion that there are agents who have agency, or who grant agency, say, to non-humans (the granting of agency is an ironic notion, no?), pulls us back into the same old humanist orbits over and over again. And it is not easy to resist the gravitational force of humanism, especially when it comes to the question of “agency.” But agency for me is not something that someone or something has to varying degrees, since I am trying to displace the very notion of independently existing individuals. This is not, however, to deny agency in its importance, but on the contrary, to rework the notion of agency in ways that are appropriate to relational ontologies. Agency is not held, it is not a property of persons or things; rather, agency is an enactment, a matter of possibilities for reconfiguring entanglements. <br>So agency is not about choice in any liberal humanist sense; rather, it is about the possibilities and accountability entailed in reconfiguring material-discursive apparatuses of bodily production, including the boundary articulations and exclusions that are marked by those practices. One of the items that you asked about is the how of agency, and in a sense, the how is precisely in the specificity of the particular practices, so I cannot give a general answer to that, but perhaps I can say something helpful about the space of possibilities for agency.
-        
-                    Agency, on an agential realist account, does not require a clash of apparatuses, (as Butler once suggested) such as the contradictory norms of femininity, so that we are never successful in completely embodying femininity, because there are contradictory requirements. Agential realism does not require that kind of clash of apparatuses, because intra-actions to begin with are never determining, even when apparatuses are reinforcing. Intra-actions entail exclusions, and exclusions foreclose determinism. However, once determinism is foreclosed this does not leave us with the option of free will. I think we tend to think about causality and questions of agency in terms of either determinism on the one hand, or free will on the other. Cause and effect are supposed to follow one upon the other like billiard balls, and so we got into the habit of saying that we do not really mean this in a causal sense. And I think to some degree, causality has become a dirty word, as realism is/was. And so I am trying to get people to talk about causality again, because I think that it is very, very important. If we have a group of people where we find that there is a lot of cancer in a certain community, I want to know something about the nature of that community and about causal relationships, because if I am at Love Canal in the United States, a populated area where a bunch of toxins were dumped and the people were getting cancers, then I might want to evacuate people. On the other hand, if I am at the Mayo Clinic, where they are treating cancer patients and there are a lot of people with cancer, it is not the thing to do. I really want us to specify more carefully the different kinds of causalities, and how to think causality again. And that is partly what I mean by the notion of “intra-action” as proposing a new way of thinking causality. It is not just a kind of neologism, which gets us to shift from interaction, where we start with separate entities and they interact, to intra-action, where there are interactions through which subject and object emerge, but actually as a new understanding of causality itself.
-                    
-                    First of all, agency is about response-ability, about the possibilities of mutual response, which is not to deny, but to attend to power imbalances. Agency is about possibilities for worldly re-configurings. So agency is not something possessed by humans, or non-humans for that matter. It is an enactment. And it enlists, if you will, “non-humans” as well as “humans.” At the same time, I want to be clear that what I am not talking about here is democratically distributing agency across an assemblage of humans and non-humans. Even though there are no agents per se, the notion of agency I am suggesting does not go against the crucial point of power imbalances. On the contrary. The specificity of intra-actions speaks to the particularities of the power imbalances of the complexity of a field of forces. I know that some people are very nervous about not having agency localized in the human subject, but I think that is the first step—recognizing that there is not this kind of localization or particular characterization of the human subject is the first step in taking account of power imbalances, not an undoing of it.
-                    
-                    As a brief example, there is an article I just came across on the Internet by Chris Wilbert called “Profit, Plague and Poultry: The Intra-active Worlds of Highly Pathogenic Avian Flu” (Wilbert 2006), on the bio-geo-politics of potential flu pandemics. Chris’s analysis of the avian flu (H5N1) as a naturalcultural phenomenon highlights the importance of taking account of the agential entanglements of intra-acting human and non-human practices. Chris points out that while world health organizations and governments are placing migratory birds and small farm chicken producers under surveillance, the empirical data does not support these causal linkages. Rather, the disease follows the geographical <a
-                    id="concept">diffraction</a> patterns of large-scale factory farmed production of poultry. The latter gives rise to unprecedented densities of birds, making first-class lodgings for thriving and mutating zoonoses. Industrially produced meats, international veterinary practices, biosecurity practices, international trade agreements, transport networks, increased density of human populations, and more are among the various agential apparatuses at work. Causality is not interactional, but rather intra-actional. Making policy based on additive approaches to multiple causes, misses key factors in avoiding epidemics such as providing inexpensive forms of safe food for the poorest populations and the elimination of industrial forms of the mass killing of animals. So in addition to nicely illustrating the importance of paying attention to “human” and “non-human” forms of agency, as it were, there is a way in which Chris acknowledges what gets left out of practices of accounting when agency is attributed to human or non-human entities and left at that. What gets left out, you see, is a whole array of very complex material practices that contribute to a kind of epidemic that is not attributable either to the organisms themselves or to the kinds of things that people do. I do not know Chris. I bring it to your attention, because I think that he gives us an interesting case to think with.
-                    
-                    Another example that may be helpful here is an example that Haraway (2008) talks about. It is an example that is raised by Barbara Smuts, who is an American bioanthropologist who went to <a
-                    id="place">Tanzania</a> to investigate baboons in the wild for her doctoral research. She is told as a scientific investigator of non-human primates to keep her distance, so that her presence would not influence the behavior of the research subjects that she was studying. Distance is the condition of objectivity. Smuts talks about the fact that this advice was a complete disaster for her research, that she found herself unable to do any observations since the baboons were constantly attentive to what she was doing. She finally realized that this was because Smuts was behaving so strangely to them, they just could not get over her. She was being a bad social subject in their circles. The only way to carry on and to do research objectively was to be responsible; that is, that objectivity, a theme that feminist science studies has been emphasizing all along, is the fact that objectivity is a matter of responsibility and not a matter of distancing at all. What ultimately did work was that she learned to be completely responsive to the non-human primates, and in that way she became a good baboon citizen. They could understand, at least intelligibly to the non-human primates, and as a result they left her alone and went about their business, making it possible for her to conduct her research.</p>
-              </div>
-              <div class="img-container">
-                <img id="item-img" src="./img-1.jpg" alt="" />
-              </div>
+        <div class="article" id="article3">
+          <div class="product-hero">
+            <div class="product-header">
+              <h3><p><b>Vanity Fair Stories 2023, Chiara Tagliaferri: «Michela Murgia sarebbe concentratissima nel dire che non dobbiamo stare zitte»</b> <br>// By Chiara Pizzimenti on Vanity Fair <br>25 Nov 2023</p></h3>
+            </div>
+            <p>«Non dobbiamo stare zitte», Chiara Tagliaferri al Vanity Fair Stories racconta Michela Murgia, il loro rapporto e la battaglia per i diritti che non si è fermata, anzi prosegue con sempre più forza dopo l'ennesimo femminicidio, quello di Giulia Cecchettin. Proprio le parole di Elena, sorella della ragazza uccisa sarebbero piaciute, secondo la scrittrice, a Michela Murgia. «Direbbe le parole che ha detto con una lucidità, una pecisione, luminosità, una chiarezza Elena Cecchettin, che ha ripetuto e che hanno provato a manipolare. Quella ragazza è una potenza. Ci sono poche persone così in grado di individuare così chiaramente il problema con tutto quello che le è accaduto. Michela farebbe sentire la sua voce, sarebbe nelle piazze, cosa stiamo facendo anche noi da qui oggi. Sarebbe concentratissima nel dire che noi non dobbiamo stare zitte».</p>  
+            <p>Chiara Tagliaferri ha aperto il suo intervento con un monologo tratto da una delle puntate del podcast Morgana che condivideva e condivide ancora con Michela Murgia e introdotta, da un video della scrittrice e attivista morta lo scorso agosto, dal direttore di Vanity Fair Simone Marchetti che ha ricordato le manifestazioni per la giornata internazionale contro la violenza sulle donne.</p>
+            <p>Le due scrittrici si sono conosciute quando Chiara Tagliaferri era l'autrice di un programma di radiofonico di cui la Murgia era ospite. «Il primo ricordo? Il caffé dopo quella trasmissione e la prima litigata su Games of Thrones. Abbiamo continuato per anni a litigare, a confrontarci su Morgana». E infine il ricordo dell'intervista a Vanity Fair: «Si è sentita una regina. Era felicissima».</p>
+          </div>  
+        </div>
+
+        <div class="product-nav">
+          <b>DISCLAIMER</b> The Content of this website is to be intented as a stylistic exercise for educational purposes. <br>This website has been developed for the <i>Information Modelling And Web Technologies course (22/23) held by professor Fabio Vitali</i></i><br>The articles are copyright of the owners, layout is by Giusy Grieco &copy; 2023 
+          <div class="scrollable-content">
+          <div class="product-variants" id="togglePeople">Show People</div>
+          <div class="product-variants">Show Places</div>
+          <div class="product-variants">Show Dates</div>
           </div>
-      </div>  <h3>Documentation </h3><p>
-      This website has been meticulously crafted with a minimalist design philosophy, aiming to provide a clean and focused user experience. This approach eliminates unnecessary elements, emphasizing simplicity and clarity in both aesthetics and functionality. <br>The chosen font for the website is "Inter," known for its modern and legible characteristics. This enhances readability and contributes to the overall sleek and contemporary look. <br>The color scheme adheres to a monochromatic palette, with black as the primary color. This choice ensures a timeless and elegant visual appeal while maintaining a high level of contrast for readability. <br><br> The main concept is born while working on another project, and it is to be intented as an exercise to make the web environment interactive and spatial. <br>About the layout, here follow the main features. 
-      <br> The container utilizes a full-width and full-height container to make the most of the screen, applies flexbox to create a responsive and fluid layout. 
-      <br> The navigation (nav) is fixed at the top, providing easy access to theme switching.
-      <br>Finally, the footer is fixed at the bottom right, offering a consistent and balanced layout. While padding ensures separation from the content above.
-  </p>
+      </div>
+
+
+
+        </div>
+        </div>
+      
+    <div class="nav">
+      <div class="nav-container">
+        <div class="nav-wrapper">
+          <div class="nav-link">
+            <a href="index.html">feMMMMag</a>
+            
+                <div class="product-header" style="z-index: z; height: 350px;">
+                  <a>&#128240;A MMMM test to (re)Mix Maps, Magazines and Metadata <br> shedding light on <a style="color: red;">femicides in Italy
+                </div>
+
+
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container">
-      <div class="items">
-        <div class="item">
-          <div class="item-index">~ 01 ~ </div>
-          <div class="item-name">Interview with Karen Barad, Documentation</div>
-          <div class="item-year">2012</div>
-        </div>
-        <div>
-          <div class="item-name"><i>The content of this website is for educational, nonprofit purposes. <br>It is not author’s intention to steal any appropriation regarding the articles. <br>All copyright on typographic and layout choices are 2023 © Giusy Grieco / <br>Articles remain to their authors.</i></div>
-        </div>
-      </div>
-    </div>
-        <!-- titles-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    <!-- js -->
-    <script type="module" src="./main.js"></script>
-    
+    <script>
+      $(document).ready(function () {
+            $('#togglePeople').click(function () {
+              $('#people').addClass('highlight');
+            });
+          });
+
+
+          function redirectToPage(page) {
+            window.location.href = page;
+          }
+
+      const tl = gsap.timeline({ paused: true });
+
+      function openNav() {
+        animateOpenNav();
+        const navBtn = document.getElementById("toggleOC");
+        navBtn.onclick = function (e) {
+          tl.reversed(!tl.reversed());
+        };
+      }
+
+      openNav();
+
+      function animateOpenNav() {
+        tl.to(".container", 1, {
+          top: "70vh",
+          scale: 0.925,
+          ease: "power4.out",
+        });
+
+        tl.to(
+          ".nav-link > a",
+          1,
+          {
+            top: 0,
+            ease: "power3.out",
+            stagger: {
+              amount: 0.2,
+            },
+          },
+          "-=1"
+        );
+
+        tl.to(
+          ".yo > a",
+          0.6,
+          {
+            opacity: 1,
+            top: 0,
+            ease: "power3.out",
+            stagger: {
+              amount: 0.1,
+            },
+          },
+          "-=1"
+        ).reverse();
+      }
+     </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const articleButtons = document.querySelectorAll(".article-toggle");
+    const articles = document.querySelectorAll(".article");
+
+    articleButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const articleId = this.dataset.article;
+
+        // Hide all articles
+        articles.forEach(article => {
+          article.style.display = "none";
+        });
+
+        // Show the selected article
+        const selectedArticle = document.getElementById(`article${articleId}`);
+        if (selectedArticle) {
+          selectedArticle.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+function changeTheme(styleSheet) {
+    document.getElementById('stylesheet').href = styleSheet;
+    // Save the selected theme to local storage
+    localStorage.setItem('selectedTheme', styleSheet);
+}
+
+window.onload = function () {
+    const storedTheme = localStorage.getItem('selectedTheme');
+    if (storedTheme) {
+        document.getElementById('stylesheet').href = storedTheme;
+    }
+};
+</script>
+
+<!-- The link tag for the stylesheet -->
+<link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+
   </body>
 </html>

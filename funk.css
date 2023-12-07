@@ -1,0 +1,624 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 27px;
+}
+
+
+
+.container {
+  position: absolute;
+  border-radius: 12px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e7b77a;
+  padding: 2em;
+  line-height: 110%;
+  font-family: 'mairy_black_oblicuaregular';
+  z-index: 1;
+}
+
+
+.highlight
+{   
+background-color: yellow; 
+border-radius: 12 px;
+}
+
+.scrollable-content {
+  overflow-y: auto;
+  max-height: 500px;
+  padding: 10px; /* Add a bit of padding to avoid content being hidden under the scrollbar */
+}
+
+.scrollable-content h2 {
+  font-family: "Neue World"; /* Use Roboto or fallback to a generic sans-serif font */
+  font-size: 40px;
+  font-weight: lighter;
+  color: #e7b77a;
+  letter-spacing: -2px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.scrollable-content p {
+  margin-bottom: 1.5em; /* Add space between paragraphs */
+}
+
+
+.nav-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+}
+
+
+#toggleOC {
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+#togglePeople {
+  cursor: pointer;
+}
+
+#togglePlaces {
+  width: 20px;
+  height: 20px;
+  background: yellowgreen;
+  border: 1px solid #039ad7;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#toggleDates {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border: 1px solid #039ad7;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+
+#toggleTHEME2 {
+  width: 20px;
+  height: 20px;
+  background: orangered;
+  border-radius: 12px;
+  margin-left: 100px;
+  border: 1px solid #039ad7;
+  cursor: pointer;
+}
+
+#toggleTHEME1 {
+  width: 20px;
+  height: 20px;
+  background: orangered;
+  border: 1px solid #039ad7;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #9ca482;
+  padding: 2em;
+  justify-content: space-between;
+
+}
+
+.nav-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'funk_gibson_demooutline';
+
+}
+
+.nav-link {
+  position: relative;
+  background-color: #e7b77a;
+  
+}
+
+.nav-link a {
+  position: relative;
+  top: 120px;
+  text-decoration: none;
+  font-family: 'funk_gibson_demooutline';
+  font-size: 80px;
+  font-weight: "Condensed Light";
+  font-weight: 300;
+  color: #039ad7;
+  letter-spacing: -2px;
+  line-height: 70%;
+}
+
+.nav-link a sup {
+  position: relative;
+  top: -20px;
+  left: -10px;
+  font-family: 'funk_gibson_demooutline';
+  font-size: 20px;
+  color: #039ad7;
+  opacity: 0.5;
+}
+
+.nav-item-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 800px;
+  height: 120px;
+  background: #9ca482;
+  margin: 0 auto;
+}
+
+.product-header {
+  font-family: 'funk_gibson_demooutline';
+}
+
+.nav-wrapper:nth-child(2) {
+  margin-right: 10em;
+}
+
+.nav-wrapper:nth-child(2) a {
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  font-family: 'mairy_black_oblicuaregular';
+  font-size: 2px;
+  color: #039ad7;
+  text-transform: uppercase;
+  margin: 0 1em;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-link a {
+    font-size: 30px;
+    top: 80px; /* Adjust the positioning */
+  }
+
+  .nav-link a sup {
+    display: none;
+  }
+
+  .nav-wrapper.yo {
+    display: flex; /* or 'block' depending on your layout */
+  }
+}
+
+
+
+/* product */
+
+
+/* hero */
+
+.product-hero {
+  bottom: 15vh;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.article {
+  display: none;
+}
+
+.product-hero > * {
+  position: relative;
+  
+}
+
+.product-hero p {
+  font-size: 40px;
+  width: 70%;
+  margin-bottom: 2em;
+  line-height: 100%;
+}
+
+.product-hero h3 {
+  color: orangered;
+  font-family: 'mairy_black_oblicuaregular';
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product > * {
+  position: relative;
+}
+
+.product-title h1 {
+  font-weight: 400;
+  font-size: 100px;
+  padding: 0.4em 0;
+}
+
+.product-title {
+  font-size: 30px;
+}
+
+.product-title span {
+  text-decoration: underline;
+}
+
+.product-look {
+  position: relative;
+}
+
+.product-look img {
+  width: 600px;
+}
+
+@media (max-width: 900px) {
+  .product-hero p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .product-title h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-look img {
+    width: 50vw;
+  }
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* footer */
+
+.product-info {
+  background: #e7b77a;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   overflow-y: auto;
+  max-height: calc(100vh - 100px);
+  padding-right: 20px; /* Add a bit of padding to avoid content being hidden under the scrollbar */
+}
+
+.product-nav,
+.product-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-nav > * {
+  margin: 0 1em;
+}
+
+.product-img {
+  width: 100px;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-name {
+  font-size: 24px;
+}
+
+.product-name span {
+  font-size: 12px;
+}
+
+.product-variants {
+  background: #fff;
+  padding: 0.5em 1em;
+  font-size: 14px;
+}
+
+.product-nav-links {
+  margin: 0 4em;
+}
+
+.product-nav-links > button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.product-btn button {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.article-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  width: 75px;
+  height: 20px;
+  color: whitesmoke;
+  background: #e7b77a;
+  cursor: pointer;
+  font-family: 'funk_gibson_demooutline';
+
+}
+
+/* product-description */
+
+.product-description {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  bottom: -50vh;
+  background: #e7b77a;
+  border-top: 1px solid #000;
+  padding-bottom: 15vh;
+  display: flex;
+}
+
+.close-desc {
+  padding: 2em;
+  cursor: pointer;
+}
+
+.desc {
+  flex: 1;
+  padding: 2em;
+}
+
+.link {
+  margin: 2em 0;
+}
+
+.link span::after {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #000;
+}
+
+.front-view,
+.side-view {
+  flex: 2;
+}
+
+.view {
+  padding: 2em 4em;
+}
+
+.product-description img {
+  width: 400px;
+}
+
+.sketch-title span {
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .front-view,
+  .side-view {
+    display: none;
+  }
+}
+
+
+
+
+
+/* font */
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on December 7, 2023 */
+
+
+
+@font-face {
+  font-family: 'mairy_black_oblicuaregular';
+  src: url('/fontkit/mairy_black_oblicua-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_black_oblicua-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_blackregular';
+  src: url('/fontkit/mairy_black-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_bold_oblicuaregular';
+  src: url('/fontkit/mairy_bold_oblicua-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_bold_oblicua-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_boldregular';
+  src: url('/fontkit/mairy_bold-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_book_oblicuaregular';
+  src: url('/fontkit/mairy_book_oblicua-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_book_oblicua-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_bookregular';
+  src: url('/fontkit/mairy_book-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_extrabold_oblicuaRg';
+  src: url('/fontkit/mairy_extrabold_oblicua-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_extrabold_oblicua-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_extraboldregular';
+  src: url('/fontkit/mairy_extrabold-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_extralight_oblicuaRg';
+  src: url('/fontkit/mairy_extralight_oblicua-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_extralight_oblicua-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_extralightregular';
+  src: url('/fontkit/mairy_extralight-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_hairline_oblicuaregular';
+  src: url('/fontkit/mairy_hairline_oblicua-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_hairline_oblicua-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'mairy_hairlineregular';
+  src: url('/fontkit/mairy_hairline-webfont.woff2') format('woff2'),
+       url('/fontkit/mairy_hairline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+@font-face {
+  font-family: 'funk_gibson_demoregular';
+  src: url('funk_gibson_demo-webfont.woff2') format('woff2'),
+       url('funk_gibson_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'funk_gibson_demooutline';
+  src: url('/fontkit/funk_gibson_outline_demo-webfont.woff2') format('woff2'),
+       url('/fontkit/funk_gibson_outline_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
